@@ -7,19 +7,21 @@ stack<int> path;
 stack<int> path_selected;
 int MIN_DIS = INT_MAX;
 
-void dfs(int curr, int dist, int N ){
+void dfs(int curr, int dist, int N , int final){
     visited[curr] = true;
     path.push(curr);
-    bool con = true;
-    for(int i=1; i<=N; i++){
-        if(visited[i]) continue;
-        con = false;
-        dfs(i,dist + distance_bwt[curr][i],N);
+    if(curr == final){
+        if(dist < MIN_DIS){
+            MIN_DIS = dist;
+            path_selected = path;
+        }
+        return;
     }
-    if(con && (dist+distance_bwt[curr][1] < MIN_DIS)){
-        MIN_DIS = dist+distance_bwt[curr][1];
-        path_selected = path;
-        path_selected.push(1);
+    else{
+        for(int i=1; i<=N; i++){
+            if(visited[i]) continue;
+            dfs(i,dist + distance_bwt[curr][i],N, final);
+        }
     }
     visited[curr] = false;
     path.pop();
@@ -38,7 +40,7 @@ int main(){
 
     ios_base::sync_with_stdio(false);
     memset(visited, false, sizeof(MAX_N));
-    int N, tem;
+    int N, tem, pos_start, pos_end;
     cin>>N;
     for(int i=1; i<N; i++){
         for(int j=i+1; j<=N; j++){
@@ -47,7 +49,8 @@ int main(){
             distance_bwt[j][i] = tem;
         }
     }
-    dfs(1, 0, N);
+    cin>>pos_start>>pos_end;
+    dfs(pos_end, 0, N, pos_start);
     while(!path_selected.empty()){
         cout<<path_selected.top()<<" -> ";
         path_selected.pop();
