@@ -1,14 +1,26 @@
-13
-144 303 574 549 798 99 258 571 481 637 878 591 
-554 725 665 825 435 672 872 430 623 536 645 
-485 865 692 445 572 777 451 648 966 935 
-660 970 770 969 883 730 623 681 363 
-721 395 345 196 426 738 812 134 
-826 212 265 314 13 794 569 
-272 764 55 309 845 322 
-664 424 997 546 854 
-622 55 118 657 
-629 437 415 
-221 237 
-391 
-2 4
+25
+Frankfurt Wurzburg 111
+Frankfurt Mannheim 85
+Wurzburg Nurnberg 104
+Wurzburg Stuttgart 140
+Wurzburg Ulm 183
+Mannheim Nurnberg 230
+Mannheim Karlsruhe 67
+Karlsruhe Basel 191
+Karlsruhe Stuttgart 64
+Nurnberg Ulm 171
+Nurnberg Munchen 170
+Nurnberg Passau 220
+Stuttgart Ulm 107
+Basel Bern 91
+Basel Zurich 85
+Bern Zurich 120
+Zurich Memmingen 184
+Memmingen Ulm 55
+Memmingen Munchen 115
+Munchen Ulm 123
+Munchen Passau 189
+Munchen Rosenheim 59
+Rosenheim Salzburg 81
+Passau Linz 102
+Salzburg Linz 126
