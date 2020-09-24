@@ -24,3 +24,20 @@ Munchen Rosenheim 59
 Rosenheim Salzburg 81
 Passau Linz 102
 Salzburg Linz 126
+16
+Basel 204
+Bern 247
+Frankfurt 215
+Karlsruhe 137
+Linz 318
+Mannheim 164
+Munchen 120
+Memmingen 47
+Nurnberg 132
+Passau 257
+Rosenheim 168
+Stuttgart 75
+Salzburg 236
+Wurzburg 153
+Zurich 157
+Ulm 0
